@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #seatContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #5cb85c; /* Green color for selected seats */
+  }
+  
