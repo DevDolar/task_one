@@ -1,29 +1,360 @@
-body {
-    font-family: Arial, sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Section #1 Style */
+
+section.bg-img {
+    background-image: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 25%)),
+    url(/image/Banner-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1320px;
+    height: 600px;
     text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  #seatContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+section.bg-img p {
+    font-size: 32px;
+    color: #fff;
+    font-family: "Merriweather", serif;
+}
+
+section.bg-img h1 {
+    font-size: 72px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: "Merriweather", serif;
+}
+
+
+/* Section #2 Style */
+
+section.discount {
+    text-align: center;
+    margin-top: 50px;
+}
+
+section.discount img {
+    width: 802px;
+    height: 100%;
+    margin-top: 48px;
+}
+
+section.discount h1 {
+    color: #ff0000;
+    font-size: 88px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+section.discount p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ff0000;
+    font-family: "Inter", sans-serif;
+}
+
+section.discount h4 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Section #3 Style */
+section.party {
+    background-image: linear-gradient(to right, rgb(0 0 0 / 90%), rgb(0 0 0 / 0%)), url(/image/Vectorrr.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 1320px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    row-gap: 30px;
+    border-radius: 20px;
+}
+
+section.party h1 {
+    font-family: "Merriweather", serif;
+    color: #fff;
+    font-size: 64px;
+    margin: 0px;
+}
+
+section.party p {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    width: 85%;
+    margin: 0px;
+}
+
+section.party a {
+    font-family: "Inter", serif;
+    background-color: white;
+    padding: 10px 30px;
+    width: 135px;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Section #4 Style */
+section.announcement {
+    margin-top: 50px;
+    background: linear-gradient(to top, rgb(255 255 255), rgb(255 0 0 / 10%));
+    width: 1320px;
+    height: 482px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-time p {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    padding: 10px 0px;
+}
+
+.info-time p span {
+    color: #ff0000;
+}
+
+section.announcement a {
+    font-family: "Inter", serif;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 30px;
+    width: 135px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+/* Section #5 Style */
+.center-img img {
+    width: 360px;
+    height: 360px;
+    padding: 30px;
+    border: 12px solid red;
+    border-radius: 50%;
+}
+
+.right-info img {
+    width: 124px;
+    height: 124px;
+}
+
+section.coming-soon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1320px;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.left-info p {
+    margin: 0px;
+    font-family: "Inter", serif;
+    font-size: 20px;
+}
+
+.right-info p {
+    margin: 0px;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+.right-info h3 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Inter", serif;
+    color: red;
+}
+
+.right-info {
+    margin-right: 0px;
+}
+
+.left-info {
+    margin: 0px;
+}
+
+.left-info h5 {
+    color: red;
+    font-size: 24px;
+    font-family: "Inter", serif;
+}
+
+.left-info h2 {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    padding: 15px 0px;
+}
+
+
+
+
+/* Section #6 Style */
+section.portfolio {
+    margin-top: 5rem;
+    width: 1320px;
+}
+
+.projects-sample {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio h5{
+    color: red;
+    font-size: 20px;
+    font-family: "Inter", serif;
+}
+
+.portfolio h1 {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    padding: 15px 0px;
+}
+
+.portfolio p{
+    font-size: 18px;
+    font-family: "Inter", serif;
+    margin-bottom: 25px;
+}
+
+
+/* Section $7 Style */
+section.subscribe {
+    width: 1320px;
+    background-color: rgb(255 0 0 / 5%);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 10rem;
+    text-align: center;
+}
+
+section.subscribe img {
+    width: 150px;
+    height: 150px;
+}
+
+section.subscribe h2 {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    padding: 15px 0px;
+}
+
+section.subscribe p {
+    font-size: 18px;
+    font-family: "Inter", serif;
+    margin-bottom: 25px;
+}
+
+input#email {
+    width: 20rem;
+    border-radius: 50px 0 0 50px;
+    background-color: white;
+    border: 1px solid #000;
+}
+
+form.subscribe-form input {
+    padding: 10px;
+    border-radius: 0 50px 50px 0;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    margin: -3px;
+}
+
+input.subscribe-btn {
+    width: 150px;
+}
+
+form.subscribe-form {display: inline;}
+
+
+/* Section $8 Style */
+section.footer {
+    background-color: #070211;
+    color: #fff;
+    padding: 80px 0 20px 0;
+}
+
+.footer-content {
+    width: 1320px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-left {
+    margin: 0;
+}
+
+.col-right {
+    margin: 0px;
+}
+
+hr {
+    margin: 30px 0;
+    border-width: 0px;
+    height: 1px;
+    background-color: #5e5e5e;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
     gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .seat {
-    width: 50px;
-    height: 50px;
-    background-color: #ccc;
-    border: 1px solid #999;
-    cursor: pointer;
-  }
-  
-  .selected {
-    background-color: #5cb85c; /* Green color for selected seats */
-  }
-  
+    margin: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list ul  li {
+    margin: 0px;
+    padding: 15px;
+}
+
+.-bottom-info {
+    display: flex;
+    justify-content: space-between;
+}
